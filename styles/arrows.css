@@ -1,0 +1,77 @@
+.arrow-down {
+    position: absolute;
+
+    left: 50%;
+    bottom: 5%;
+
+    scale: 1.5;
+    rotate: 90deg;
+    translate: -50% -50%;
+
+    border-radius: 50%;
+}
+
+.arrow-1,
+.arrow-2,
+.arrow-3 {
+    position: absolute;
+    translate: -50% -50%;
+}
+
+.arrow-1 {
+    transform: translateX(-150%);
+    opacity: 0;
+    animation: arrow-1-animation 2000ms infinite linear;
+}
+
+.arrow-2 {
+    transform: translateX(-100%);
+    opacity: 1;
+    animation: arrow-2-animation 2000ms infinite linear;
+}
+
+.arrow-3 {
+    transform: translateX(-50%);
+    opacity: 1;
+    animation: arrow-3-animation 2000ms infinite linear;
+}
+
+@keyframes arrow-1-animation {
+    from {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes arrow-2-animation {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes arrow-3-animation {
+    from {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    #arrow-down2 {
+        display: none;
+    }
+}

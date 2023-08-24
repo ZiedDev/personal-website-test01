@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/page.css">
+    <link rel="stylesheet" href="./styles/cursor.css">
+    <link rel="stylesheet" href="./styles/cards.css">
+    <link rel="stylesheet" href="./styles/arrows.css">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png"> <!-- temp icon -->
+
+    <!-- Scripts -->
+    <script src="./scripts/cursor.js" defer></script>
+    <script src="./scripts/hacker-effect.js" defer></script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <title>Zied's Page</title>
+</head>
+
+<body>
+    <div id="blob"></div>
+    <div id="blur"></div>
+    <div id="cursor">
+        <svg id="cursor-link-icon" class="cursor-link-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+            viewBox="0 0 24 24">
+            <path fill="#000000" d="M6.4 18L5 16.6L14.6 7H6V5h12v12h-2V8.4L6.4 18Z" />
+        </svg>
+    </div>
+
+    <section class="full-window" id="header">
+        <h1 data-value="ZIED REFEAT" onpointerover="hackerEffect(event)">ZIED REFEAT
+        </h1>
+
+        <a class="arrow-down" href="#projects-section-anchor">
+            <svg class="arrow-1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z" />
+            </svg>
+            <svg class="arrow-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z" />
+            </svg>
+            <svg class="arrow-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z" />
+            </svg>
+        </a>
+    </section>
+
+    <section class="empty-space"></section>
+
+    <section class="full-window" id="projects-section">
+        <a id="projects-section-anchor"></a>
+        <h1 data-value="MY PROJECTS" onpointerover="hackerEffect(event)">MY PROJECTS
+        </h1>
+
+        <div id="cards-container">
+            <a class="card link" href="https://zieddev.github.io/spotiverse/" target="_blank">
+                <img src="./images/img1.png" alt="">
+                <div class="img-description">
+                    <h3>Spotiverse</h3>
+                </div>
+            </a>
+            <a class="card link" href="https://zieddev.github.io/etch-a-sketch/" target="_blank">
+                <img src="./images/img2.png" alt="">
+                <div class="img-description">
+                    <h3>Etch a Sketch</h3>
+                </div>
+            </a>
+            <a class="card link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+                <img src="./images/img3.png" alt="">
+                <div class="img-description">
+                    <h3>Mystery</h3>
+                </div>
+            </a>
+        </div>
+        <a class="arrow-down" id="arrow-down2" href="#footer-section-anchor">
+            <svg class="arrow-1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z" />
+            </svg>
+            <svg class="arrow-2" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z" />
+            </svg>
+            <svg class="arrow-3" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                <path fill="#ffffff"
+                    d="m14.475 12l-7.35-7.35q-.375-.375-.363-.888t.388-.887q.375-.375.888-.375t.887.375l7.675 7.7q.3.3.45.675t.15.75q0 .375-.15.75t-.45.675l-7.7 7.7q-.375.375-.875.363T7.15 21.1q-.375-.375-.375-.888t.375-.887L14.475 12Z" />
+            </svg>
+        </a>
+
+    </section>
+
+    <section class="empty-space"></section>
+
+    <section class="full-window" id="footer">
+        <a class="anchor" id="footer-section-anchor"></a>
+        <a class="footer-content link" href="https://www.github.com/zieddev" target="_blank">
+            <h1 data-value="GITHUB" onpointerover="hackerEffect(event)">GITHUB
+            </h1>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 64 64">
+                <path fill="aquamarine"
+                    d="M32 0C14 0 0 14 0 32c0 21 19 30 22 30c2 0 2-1 2-2v-5c-7 2-10-2-11-5c0 0 0-1-2-3c-1-1-5-3-1-3c3 0 5 4 5 4c3 4 7 3 9 2c0-2 2-4 2-4c-8-1-14-4-14-15c0-4 1-7 3-9c0 0-2-4 0-9c0 0 5 0 9 4c3-2 13-2 16 0c4-4 9-4 9-4c2 7 0 9 0 9c2 2 3 5 3 9c0 11-7 14-14 15c1 1 2 3 2 6v8c0 1 0 2 2 2c3 0 22-9 22-30C64 14 50 0 32 0Z" />
+            </svg>
+        </a>
+    </section>
+</body>
+
+</html>
